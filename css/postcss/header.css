@@ -1,0 +1,15 @@
+@custom-media --header-up (width >= 48rem);
+
+header {
+  @media (--header-up) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & nav ul {
+    margin-block: 0;
+    display: flex;
+    grid-gap: var(--grid-spacing);
+  }
+}

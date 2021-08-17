@@ -1,0 +1,34 @@
+/** PostCSS preset env can't create fallback values for scoped custom properties.
+If you need to support IE11 you'll need to create namespaced ones to use.
+:root {
+  --tile-background-color: var(--blue);
+  --tile-text-color: var(--white);
+  --tile-link-color: var(--white);
+}
+*/
+
+.tile {
+  --background-color: var(--blue);
+  --text-color: var(--white);
+  --link-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--background-color);
+  border-radius: .5rem;
+  color: var(--text-color);
+
+  @media (--large-up) {
+    min-height: 15rem;
+  }
+
+  & h3,
+  & p {
+    margin-top: 0;
+    color: inherit;
+  }
+
+  & a {
+    margin-top: auto;
+  }
+}

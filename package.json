@@ -1,0 +1,41 @@
+{
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/plugin-proposal-class-properties": "latest",
+    "@babel/plugin-proposal-object-rest-spread": "latest",
+    "@babel/plugin-transform-spread": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/register": "latest",
+    "@rollup/plugin-babel": "latest",
+    "@rollup/plugin-commonjs": "latest",
+    "@rollup/plugin-node-resolve": "latest",
+    "browser-sync": "latest",
+    "browserslist": "latest",
+    "core-js": "latest",
+    "cssnano": "latest",
+    "fast-glob": "latest",
+    "postcss": "latest",
+    "postcss-cli": "latest",
+    "postcss-import": "latest",
+    "postcss-preset-env": "latest",
+    "rollup": "latest",
+    "rollup-plugin-terser": "latest"
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "dialog-polyfill": "^0.5.6",
+    "tabbable": "latest"
+  },
+  "scripts": {
+    "postcss": "postcss css/postcss/*.css --dir css/processed --config postcss.config.js",
+    "rollup": "rollup -c",
+    "server": "browser-sync start -c browsersync.conf.js"
+  },
+  "browserslist": [
+    "last 2 Chrome major versions",
+    "last 2 Firefox major versions",
+    "last 2 Safari major versions",
+    "last 2 Edge major versions",
+    "last 1 Explorer major version"
+  ]
+}

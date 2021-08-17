@@ -1,0 +1,9 @@
+@import "_grid-fallback.css";
+
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+    grid-gap: var(--grid-spacing);
+  }
+}

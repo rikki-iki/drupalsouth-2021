@@ -1,0 +1,20 @@
+@custom-media --medium-up (width >= 24rem);
+@custom-media --large-up (width >= 48rem);
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 10%);
+  --blue: hsl(218, 100%, 50%);
+  --background-color: var(--white);
+  --text-color: var(--black);
+  --link-color: var(--blue);
+  --grid-spacing: 1rem;
+  --link-spacing: .5rem 1rem;
+}
+
+@media (--large-up) {
+  :root {
+    --grid-spacing: 2rem;
+    --link-spacing: 1rem 2rem;
+  }
+}

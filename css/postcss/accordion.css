@@ -1,0 +1,10 @@
+details {
+  display: block;
+  border: 3px solid;
+  border-radius: .5rem;
+  padding: 1rem;
+
+  & *:last-child {
+    margin-bottom: 0;
+  }
+}

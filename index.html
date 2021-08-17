@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="stylesheet" href="native/style.css">-->
+  <link rel="stylesheet" href="css/processed/base.css">
+  <link rel="stylesheet" href="css/processed/layout.css">
+  <link rel="stylesheet" href="css/processed/header.css">
+  <link rel="stylesheet" href="css/processed/grid.css">
+  <link rel="stylesheet" href="css/processed/tile.css">
+  <link rel="stylesheet" href="css/processed/accordion.css">
+  <title>Example</title>
+</head>
+
+<body>
+  <header>
+    <span>Hello!</span>
+    <nav>
+      <ul class="list-reset">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Page title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+    <details id="accordion-demo">
+      <summary data-accordion-toggle>Accordion</summary>
+      <div class="accordion__content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+      </div>
+    </details>
+    <h2>Content based grid</h2>
+    <ul class="grid list-reset">
+      <li class="tile">
+        <h3>Box</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+        <a href="#">Action</a>
+      </li>
+      <li class="tile">
+        <h3>Box</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+        <a href="#">Action</a>
+      </li>
+      <li class="tile">
+        <h3>Box</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+        <a href="#">Action</a>
+      </li>
+      <li class="tile">
+        <h3>Box</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+        <a href="#">Action</a>
+      </li>
+    </ul>
+  </main>
+  <aside>
+    <h2>Sidebar</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+    <button aria-controls="dialog-demo" data-dialog-toggle>Show dialog</button>
+    <dialog id="dialog-demo">
+      <div class="dialog__content">
+        <h3>Accessible Dialog</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+        <button data-dialog-close>Close dialog</button>
+      </div>
+    </dialog>
+  </aside>
+  <footer>
+    <p>Thanks!</p>
+  </footer>
+</body>
+
+<script type="module" src="js/module/main.js"></script>
+<script nomodule src="js/nomodule/main.js"></script>
+</html>

@@ -1,0 +1,42 @@
+body {
+  margin: auto;
+  max-width: 88rem;
+  padding: var(--grid-spacing);
+  height: 100vh;
+  display: grid;
+  grid-gap: var(--grid-spacing);
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content auto min-content min-content;
+  grid-template-areas:
+          "header"
+          "main"
+          "sidebar"
+          "footer";
+}
+
+@media screen and (min-width: 50rem) {
+  body {
+    grid-template-columns: 3fr 9fr;
+    grid-template-rows: min-content auto min-content;
+    grid-template-areas:
+            "header header"
+            "sidebar main"
+            "footer footer";
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
